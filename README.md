@@ -18,7 +18,7 @@
 
 
 ## Лабораторные работы:
-1. [Основы языка Python.](https://github.com/iu5team/iu5web-fall-2021/wiki/lab_python_intro) ( [Пример](/code/lab1_code) )
+1. [Основные конструкции языка Python.](https://github.com/iu5team/iu5web-fall-2021/wiki/lab_python_intro) ( [Пример](/code/lab1_code) )
 1. [Объектно-ориентированные возможности языка Python.](https://github.com/iu5team/iu5web-fall-2021/wiki/lab_python_oop) ( [Пример](/code/lab2_code) )
 
 ## Домашнее задание:
