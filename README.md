@@ -15,7 +15,7 @@
 1. Виртуальные окружения. Модули, пакеты. Введение в ООП:
     * [Презентация.](https://github.com/iu5team/iu5web-fall-2021/blob/main/pres/lect2/oop.pdf)
     * [Примеры кода.](/code/lect2_code)
-    * [Документация по ООП](https://docs.python.org/3/tutorial/classes.html)
+    * [Документация по ООП.](https://docs.python.org/3/tutorial/classes.html)
     * [Расширенные возможности объектно-ориентированного программирования в Python.](https://nbviewer.jupyter.org/github/iu5team/iu5web-fall-2021/blob/main/notebooks/oop/oop_adv.ipynb)
 
 1. Типы данных и коллекции:
