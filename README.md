@@ -5,7 +5,7 @@
 
 ## Лекции:
 
-#### Видеотрансляции лекций на youtube?
+#### Видеотрансляции лекций на youtube - https://youtube.com/playlist?list=PL9vFTJYocFHqNW8AEDPJWREAYwZjdbTgO
 
 1. Введение в Python:
     * [История языка Python и основные ссылки.](https://github.com/iu5team/iu5web-fall-2021/wiki/python_intro)
