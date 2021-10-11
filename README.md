@@ -32,6 +32,13 @@
     * [Работа с файлами в Python.](https://nbviewer.jupyter.org/github/iu5team/iu5web-fall-2021/blob/main/notebooks/fp/files/files.ipynb)
     * [Новые возможности функционального программирования в Python 3.10.](https://docs.python.org/3.10/whatsnew/3.10.html)
 
+1. Технологии и протоколы веб-разработки:
+    * [Трехзвенная архитектура веб-приложения. История развития средств веб-разработки.](https://github.com/iu5team/iu5web-fall-2021/blob/main/pres/lect_web/web_intro.pdf)
+    * [Стандарты интернета. URI, URL, URN. Протокол HTTP.](https://github.com/iu5team/iu5web-fall-2021/blob/main/pres/rip_http.pdf)
+    * [Шаблон проектирования Model-View-Controller.](https://ru.wikipedia.org/wiki/Model-View-Controller)
+    * [Шаблон проектирования Model-View-Presenter.](https://ru.wikipedia.org/wiki/Model-View-Presenter)
+
+
 
 ## Лабораторные работы:
 1. [Основные конструкции языка Python.](https://github.com/iu5team/iu5web-fall-2021/wiki/lab_python_intro) ( [Пример](/code/lab1_code) )
