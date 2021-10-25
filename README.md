@@ -37,7 +37,7 @@
     * [Стандарты интернета. URI, URL, URN. Протокол HTTP.](https://github.com/iu5team/iu5web-fall-2021/blob/main/pres/rip_http.pdf)
     * [Шаблон проектирования Model-View-Controller.](https://ru.wikipedia.org/wiki/Model-View-Controller)
     * [Шаблон проектирования Model-View-Presenter.](https://ru.wikipedia.org/wiki/Model-View-Presenter)
-
+    * [Введение в разработку веб-приложений на Python с использованием веб-фреймворков. Фреймворк Django.](https://github.com/iu5team/iu5web-fall-2021/blob/main/pres/rip_django_2021.pdf)
 
 
 ## Лабораторные работы:
