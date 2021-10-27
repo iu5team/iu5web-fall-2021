@@ -45,6 +45,7 @@
 1. [Объектно-ориентированные возможности языка Python.](https://github.com/iu5team/iu5web-fall-2021/wiki/lab_python_oop) ( [Пример](/code/lab2_code) )
 1. [Функциональные возможности языка Python.](https://github.com/iu5team/iu5web-fall-2021/wiki/lab_python_fp)
 1. [Создание прототипа веб-приложения с использованием фреймворка Django.](https://github.com/iu5team/iu5web-fall-2021/wiki/lab_django)
+    * [Методические указания.](https://github.com/iu5team/iu5web-fall-2021/blob/main/tutorials/lab4/lab4_tutorial.md)    
 
 
 ## Домашнее задание:
