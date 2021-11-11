@@ -16,11 +16,11 @@ http://dev.mysql.com/downloads/windows/. Также вам потребуетс�
 
 После того, как вы установили MySQL, необходимо запустить сервер. В случае с
 Windows можно воспользоваться этим мануалом:
-http://dev.mysql.com/doc/refman/5.7/en/windows-start-command-line.html
+https://dev.mysql.com/doc/refman/8.0/en/windows-start-command-line.html
 
 Чтобы начать работать с сервером MySQL, нужно подсоединиться к нему из
 клиента. Для этого можно открыть Workbench или использовать командную строку
-("C:\Program Files\MySQL\MySQL Server 5.7\bin\mysql" в случае с windows)
+("C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql" в случае с windows)
 
 ![Создание проекта](assets/2.png)
 
