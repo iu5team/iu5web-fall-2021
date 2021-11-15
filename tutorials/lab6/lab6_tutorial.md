@@ -9,7 +9,7 @@
 1. Вводная часть: новый проект
 2. Выбираем технологии: почему не подходят Django-шаблоны?
 3. API и REST: что это и почему это удобно?
-    
+   
     3.1 Что такое API?
     
     3.2 Что такое REST? Как его применить для нашей задачи?
@@ -94,13 +94,13 @@
 ![Screen Shot 2021-10-24 at 4.11.48 pm.png](assets/Screen_Shot_2021-10-24_at_4.11.48_pm.png)
 
 1. После этого во вкладке Terminal выполняем команду `pip install djangorestframework` (это нужно для установки библиотеки DRF)
-    
+   
     ![Screen Shot 2021-10-24 at 4.15.42 pm.png](assets/Screen_Shot_2021-10-24_at_4.15.42_pm.png)
     
 2. Создадим приложение stocks с помощью команды `django-admin startapp stocks`
 3. Применим все миграции проекта: `python [manage.py](http://manage.py/) migrate`
 4. В файле lab6/lab6/settings.py в листе `INSTALLED_APPS` добавим название нашего приложения и название модуля DRF:
-    
+   
     ```python
     INSTALLED_APPS = [
         'django.contrib.admin',
@@ -132,6 +132,9 @@
 В файле **lab6/stocks/models.py** напишем представление модели акции:
 
 ```python
+from django.db import models
+
+
 class Stock(models.Model):
     company_name = models.CharField(max_length=50, verbose_name="Название компании")
     price = models.DecimalField(max_digits=8, decimal_places=2, verbose_name="Цена акции")
@@ -141,8 +144,8 @@ class Stock(models.Model):
 
 После того как мы создали модель в коде, нужно сделать миграцию базы данных, чтобы создать такую таблицу. Исполним в терминале:
 
-1. `python [manage.py](http://manage.py/) makemigrations` (создаем файлы миграций)
-2. `python [manage.py](http://manage.py/) migrate` (применяем файлы миграций к базе)
+1. `python manage.py makemigrations` (создаем файлы миграций)
+2. `python manage.py migrate` (применяем файлы миграций к базе)
 
 ## 6. Написание сериализатора
 
@@ -152,17 +155,22 @@ class Stock(models.Model):
 
 Сериализаторы были придуманы для того, чтобы преобразовывать наши модели из базы данных в JSON и наоборот.
 
-Чтобы написать сериализатор нужно создать специальный файл `[serializers.py](http://serializers.py)` внутри вашего приложения. И написать там поля, которые вы хотели бы, чтобы преобразовывались в JSON и отправлялись клиенту.
+Чтобы написать сериализатор нужно создать специальный файл `serializers.py` внутри вашего приложения. И написать там поля, которые вы хотели бы, чтобы преобразовывались в JSON и отправлялись клиенту.
 
 Напишем сериализатор в файле lab6/stocks/serializers.py
 
 ```python
+from stocks.models import Stock
+from rest_framework import serializers
+
+
 class StockSerializer(serializers.ModelSerializer):
     class Meta:
         # Модель, которую мы сериализуем
         model = Stock
         # Поля, которые мы сериализуем
-        fields = ["pk","company_name", "price", "is_growing", "date_modified"]
+        fields = ["pk", "company_name", "price", "is_growing", "date_modified"]
+
 ```
 
 ## 7. Написание View
@@ -172,7 +180,12 @@ View — это точка входа в приложение, именно view
 Напишем view в файле lab6/stocks/views.py
 
 ```python
-class UserViewSet(viewsets.ModelViewSet):
+from rest_framework import viewsets
+from stocks.serializers import StockSerializer
+from stocks.models import Stock
+
+
+class StockViewSet(viewsets.ModelViewSet):
     """
     API endpoint, который позволяет просматривать и редактировать акции компаний
     """
@@ -188,6 +201,11 @@ class UserViewSet(viewsets.ModelViewSet):
 Для этого в файле lab6/lab6/urls.py напишем:
 
 ```python
+from django.contrib import admin
+from stocks import views as stock_views
+from django.urls import include, path
+from rest_framework import routers
+
 router = routers.DefaultRouter()
 router.register(r'stocks', stock_views.StockViewSet)
 
@@ -212,34 +230,34 @@ urlpatterns = [
 Первый запрос, который мы будем тестировать — это добавление новой акции. Для выполнения запроса:
 
 1. Нажмем на плюсик и во всплывающем меню выберем **New Request**:
-    
+   
     ![Screen Shot 2021-10-24 at 7.50.28 pm.png](assets/Screen_Shot_2021-10-24_at_7.50.28_pm.png)
     
 2. Во всплывшем окне напишем название запроса для удобства(оно будет отображаться в колонке слева), в качестве примера используем название *create new stock*
 3. После этого мы сможем редактировать наш запрос: выбрать HTTP метод(GET/POST/...), попробуем запросить список всех акций
-    
+   
     ![Screen Shot 2021-10-25 at 9.15.00 pm.png](assets/Screen_Shot_2021-10-25_at_9.15.00_pm.png)
     
 4. Как можно увидеть, нам пришел пустой список `[]`, чтобы добавить акции новой компании воспользуемся методом POST. Выбрав метод POST, нам также необходимо передать данные в теле запроса в виде JSON структуры, а затем отправить запрос(сделать это можно несколько раз, чтобы данных было больше).
-    
+   
     ![Screen Shot 2021-10-25 at 9.19.40 pm.png](assets/Screen_Shot_2021-10-25_at_9.19.40_pm.png)
     
 5. Нам пришел статус 201 и вернулся объект, который мы создали, попробуем еще раз запросить список всех объектов с помощью GET запроса.
-    
+   
     ![Screen Shot 2021-10-25 at 9.32.33 pm.png](assets/Screen_Shot_2021-10-25_at_9.32.33_pm.png)
     
 6. Можно заметить, что нам вернулись все объекты, которые мы создали, также им присвоились номера, которые написаны в поле pk(Primary Key), давайте попробуем изменить объект с pk=2 и поменять название компании, а также курс ее акций. Для этого поменяем метод на PUT(нужен для обновления объекта), в конце ссылки напишем id и передадим новый объект (переименуем [Mail.Ru](http://Mail.Ru) в VK).
-    
+   
     ![Screen Shot 2021-10-25 at 9.38.34 pm.png](assets/Screen_Shot_2021-10-25_at_9.38.34_pm.png)
     
 7. В нашей базе данных мы сделали ребрендинг [Mail.Ru](http://Mail.Ru), теперь можно для наглядности и надежности посмотреть список объектов еще раз:
-    
+   
     ![Screen Shot 2021-10-25 at 9.40.10 pm.png](assets/Screen_Shot_2021-10-25_at_9.40.10_pm.png)
     
 8. Мы успешно переименовали [Mail.Ru](http://Mail.Ru) в VK в объекте с pk=2(третий по счету) и изменили стоимость акций у этой компании.
- 
+
 9. Далее необходимо удалить все объекты с названием Mail.Ru. Можно заметить, что это записи с pk=3 и pk=1, чтобы удалить эти записи достаточно изменить HTTP метод на DELETE и в конце строки аргументом указать pk. Все почти также, как в методе PUT, только тело запроса здесь не нужно.
-    
+   
     ![Screen Shot 2021-10-25 at 9.45.19 pm.png](assets/Screen_Shot_2021-10-25_at_9.45.19_pm.png)
     
 10. Успешно удалив два объекта Mail.Ru, давайте проверим, что в списке остался один объект с pk=2:
