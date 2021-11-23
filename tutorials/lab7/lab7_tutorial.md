@@ -1,6 +1,6 @@
-# Лабораторная работа №7 Vanila JS
+# Методические указания по выполнению лабораторной работы №7
 
-В этой лабораторной работе мы напишем простой Fronted на JS для работы с нашим REST API
+### Команда курса благодарит Алёхина Сергея Сергеевича за активное участие в подготовке данного руководства.
 
 ## План
 
@@ -825,9 +825,9 @@ async render() {
     └── main.js
 ```
 
-## 11. Полезные ссылочки
+## 11. Полезные ссылки
 
-1. Проект, который мы сегодня сделали в методе [тут](https://github.com/alSergey/bmstu_lab7)
+1. Проект, который мы сделали в данном руководстве [тут](https://github.com/alSergey/bmstu_lab7)
 2. Почитать про **document** [тут](https://developer.mozilla.org/ru/docs/Web/API/Document)
 3. Почитать про **insertAdjacentHTML** [тут](https://developer.mozilla.org/ru/docs/Web/API/Element/insertAdjacentHTML)
 4. Почитать про **event** [тут](https://developer.mozilla.org/ru/docs/Web/API/Event)

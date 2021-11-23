@@ -39,6 +39,7 @@
     * [Шаблон проектирования Model-View-Presenter.](https://ru.wikipedia.org/wiki/Model-View-Presenter)
     * [Введение в разработку веб-приложений на Python с использованием веб-фреймворков. Фреймворк Django.](https://github.com/iu5team/iu5web-fall-2021/blob/main/pres/rip_django_2021.pdf)
 
+1. [Создание пользовательского интерфейса в веб-приложениях. Использование библиотеки React.](https://drive.google.com/drive/folders/1S-YLnrPBgmECDtE6sowZgRSlGpP3ayIK)
 
 ## Лабораторные работы:
 1. [Основные конструкции языка Python.](https://github.com/iu5team/iu5web-fall-2021/wiki/lab_python_intro) ( [Пример](/code/lab1_code) )
@@ -50,6 +51,10 @@
     * [Методические указания.](https://github.com/iu5team/iu5web-fall-2021/blob/main/tutorials/lab5/lab5_tutorial.md)    
 1. [Разработка REST API с использованием Django REST Framework.](https://github.com/iu5team/iu5web-fall-2021/wiki/lab_drf)
     * [Методические указания.](https://github.com/iu5team/iu5web-fall-2021/blob/main/tutorials/lab6/lab6_tutorial.md)    
+1. [Разработка пользовательского интерфейса для работы с REST API.](https://github.com/iu5team/iu5web-fall-2021/wiki/lab_js1)
+    * [Методические указания.](https://github.com/iu5team/iu5web-fall-2021/blob/main/tutorials/lab7/lab7_tutorial.md)    
+1. [Разработка пользовательского интерфейса с использованием библиотеки React.](https://github.com/iu5team/iu5web-fall-2021/wiki/lab_js2)
+    * [Методические указания.](https://github.com/iu5team/iu5web-fall-2021/blob/main/tutorials/lab8/lab8_tutorial.md)    
 
 ## Домашнее задание:
 
