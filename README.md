@@ -59,7 +59,7 @@
 ## Домашнее задание:
 
 1. [Домашнее задание, вариант 1. Разработка мобильного приложения.](https://github.com/iu5team/iu5web-fall-2021/wiki/DZ_v1)
-    * Методические указания для платформы Android (будут опубликованы позже).
+    * [Методические указания для платформы Android.](https://github.com/iu5team/iu5web-fall-2021/blob/main/tutorials/android_tutorial/android_tutorial.md)
     * [Методические указания для платформы iOS.](https://github.com/iu5team/iu5web-fall-2021/blob/main/tutorials/ios_tutorial/ios_tutorial.md)
 2. [Домашнее задание, вариант 2. Разработка прототипа SPA приложения.](https://github.com/iu5team/iu5web-fall-2021/wiki/DZ_v2)
 3. [Домашнее задание, вариант 3. Разработка прототипа веб-приложения с использованием фреймворка Django.](https://github.com/iu5team/iu5web-fall-2021/wiki/DZ_v3)
