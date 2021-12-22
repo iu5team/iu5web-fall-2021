@@ -41,6 +41,9 @@
 
 1. [Создание пользовательского интерфейса в веб-приложениях. Использование библиотеки React.](https://drive.google.com/drive/folders/1S-YLnrPBgmECDtE6sowZgRSlGpP3ayIK)
 
+1. [Введение в мобильную разработку.](https://github.com/iu5team/iu5web-fall-2021/blob/main/pres/rip_mobile.pdf)
+
+
 ## Лабораторные работы:
 1. [Основные конструкции языка Python.](https://github.com/iu5team/iu5web-fall-2021/wiki/lab_python_intro) ( [Пример](/code/lab1_code) )
 1. [Объектно-ориентированные возможности языка Python.](https://github.com/iu5team/iu5web-fall-2021/wiki/lab_python_oop) ( [Пример](/code/lab2_code) )
@@ -64,6 +67,7 @@
 2. [Домашнее задание, вариант 2. Разработка прототипа SPA приложения.](https://github.com/iu5team/iu5web-fall-2021/wiki/DZ_v2)
 3. [Домашнее задание, вариант 3. Разработка прототипа веб-приложения с использованием фреймворка Django.](https://github.com/iu5team/iu5web-fall-2021/wiki/DZ_v3)
 4. Подготовка черновика статьи по тематике курса (тематика статьи согласовывается с преподавателем) добавляет +1 балл на экзамене.
+
 
 ## Рубежные контроли:
 
