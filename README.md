@@ -73,3 +73,6 @@
 
 ## Материалы к экзамену:
 
+* [Вопросы к экзамену.](https://github.com/iu5team/iu5web-fall-2021/wiki/EXAM_QUESTIONS)
+    * Для подготовки к вопросам по технологии СSS (Cascading Style Sheets) рекомендуется также использовать [следующий конспект.](https://ugapanyuk.github.io/data/lab3_css_styles.zip)
+
